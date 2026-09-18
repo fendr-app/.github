@@ -1,25 +1,32 @@
 # Fendr
 
-**Vagtplan, check-in og løn til vagtfirmaer og event-bemanding.**
+**Vagtplan, check-ind og løn til bemanding.**
 
-Fendr er bygget til danske vagtfirmaer, eventbureauer og festivals. Hver begivenhed får sit hold, sine roller og sine krav — med check-in, kontrakter og løn i samme flow, så kontoret slipper for regneark og dobbeltarbejde.
+Fendr er bygget til danske vagtfirmaer, eventbureauer og festivals. Hver begivenhed får sit hold, sine roller og sine krav — med check-ind, kontrakter og løn i samme flow, så kontoret slipper for regneark og dobbeltarbejde.
 
-[fendr.dk](https://fendr.dk) · [Åbn appen](https://app.fendr.dk) · [Hent i App Store](https://apps.apple.com/dk/app/fendr/id6805802017?l=da) · [hej@fendr.dk](mailto:hej@fendr.dk)
+[www.fendr.dk](https://www.fendr.dk) · [Åbn appen](https://app.fendr.dk) · [App Store](https://apps.apple.com/dk/app/fendr/id6805802017?l=da) · [hej@fendr.dk](mailto:hej@fendr.dk)
 
-## Hvad vi bygger
+## Produkter
 
-| Overflade | Rolle |
-| --- | --- |
-| **Web** (`app.fendr.dk`) | Kontor: vagtplan pr. begivenhed, bemanding, digitale kontrakter og lønexport |
-| **iOS** | Native medarbejder-app (Swift) — stempel, vagter og medarbejderkort |
-| **Android** | Native medarbejder-app (Kotlin) — samme flow som iOS |
+| Overflade | Repo | Rolle |
+| --- | --- | --- |
+| **Web** | [`fendr`](https://github.com/fendr-app/fendr) | Kontor: vagtplan, bemanding, check-ind, kontrakter og løn |
+| **iOS** | [`fendr-ios`](https://github.com/fendr-app/fendr-ios) | Native medarbejder-app (SwiftUI) — vagter, stempel og kontor |
+| **Android** | [`fendr-android`](https://github.com/fendr-app/fendr-android) | Native medarbejder-app (Kotlin + Compose) — samme flow som iOS |
+| **Incidents** | [`fendr-incidents`](https://github.com/fendr-app/fendr-incidents) | Stadium incident logging for klubber — [incidents.fendr.dk](https://incidents.fendr.dk) |
 
-Kildekoden er privat. Produktet er dansk og hostes i EU.
+Apprepos er private. Produktet er dansk og hostes i EU.
+
+## Stack (kort)
+
+- **Web / Incidents** — Next.js, TypeScript, Supabase (Auth + Postgres RLS), Vercel
+- **iOS** — SwiftUI, samme API og Supabase-projekt som web
+- **Android** — Kotlin, Jetpack Compose, samme API og Supabase-projekt som iOS
 
 ## Links
 
-- Produkt: [fendr.dk](https://fendr.dk)
-- Status: [fendr.dk/status](https://www.fendr.dk/status)
-- Sikkerhed og DPA: [fendr.dk/sikkerhed](https://www.fendr.dk/sikkerhed)
+- Produkt: [www.fendr.dk](https://www.fendr.dk)
+- Status: [www.fendr.dk/status](https://www.fendr.dk/status)
+- Sikkerhed & DPA: [www.fendr.dk/sikkerhed](https://www.fendr.dk/sikkerhed)
 - Support: [hej@fendr.dk](mailto:hej@fendr.dk)
 - Sikkerhedshændelser: [security@fendr.dk](mailto:security@fendr.dk)
